@@ -11,13 +11,13 @@ namespace Projet_Final_Environement.src
         public static void KGtoLB(double input)
         {
             double LBTotal = input * 2.20462;
-            Console.WriteLine("{0:F2}", LBTotal);
+            Console.WriteLine("{0:F2}", LBTotal + " LB");
         }
 
         public static void LBtoKG(double input)
         {
-            double KGTotal = input * 2.20462;
-            Console.WriteLine("{0:F2}", KGTotal);
+            double KGTotal = input / 2.20462;
+            Console.WriteLine("{0:F2}", KGTotal + " KG");
         }
     }
 }

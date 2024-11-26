@@ -10,7 +10,15 @@ namespace Projet_Final_Environement.src
     {
         public static bool IsInt(string input)
         {
-            return int.TryParse(input, out _);
+            if (int.TryParse(input, out int result))
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine($"The input '{input}' is not a valid integer.");
+                return false;
+            }
         }
         public static bool Quit(string input)
         {
@@ -35,6 +43,7 @@ namespace Projet_Final_Environement.src
             }
             else
             {
+                Console.WriteLine("Invalid input");
                 return false;
             }
         }
