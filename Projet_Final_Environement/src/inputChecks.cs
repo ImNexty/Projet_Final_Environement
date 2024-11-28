@@ -47,6 +47,30 @@ namespace Projet_Final_Environement.src
                 return false;
             }
         }
+        public static bool OneTwoThreeFour(string input)
+        {
+            if (input == "1" || input == "2" || input == "3" || input == "4")
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+                return false;
+            }
+        }
+        public static bool OneTwoThreeFourFive(string input)
+        {
+            if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5")
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+                return false;
+            }
+        }
     }
 }
 
