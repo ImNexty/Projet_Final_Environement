@@ -49,16 +49,19 @@ namespace Projet_Final_Environement.src
             switch (input)
             {
                 case "1":
-                    Conversions.ConversionPoids();
+                    Conversions.ConversionWeight(out quit);
                     break;
 
                 case "2":
+                    Conversions.ConversionDistance(out quit);
                     break;
 
                 case "3":
+                    Conversions.ConversionSurface(out quit);
                     break;
 
                 case "4":
+                    Conversions.ConversionTemperature(out quit);
                     break;
 
                 case "5":
