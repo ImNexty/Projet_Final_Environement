@@ -16,14 +16,20 @@ namespace Projet_Final_Environement.src
 
             do
             {
+                Console.WriteLine("Choose the type of conversion");
+                Console.WriteLine("=================");
                 Console.WriteLine("1-Convert weight");
                 Console.WriteLine("2-Convert distance");
                 Console.WriteLine("3-Convert surface");
                 Console.WriteLine("4-Convert Temp");
                 Console.WriteLine("5-Convert Speed");
                 Console.WriteLine("6-Change Language");
+                Console.WriteLine("=================");
                 Console.WriteLine("7-Quit");
+                Console.WriteLine("=================");
+                Console.Write("Enter your choice: ");;
                 input = Console.ReadLine();
+                Console.Clear();
 
             } while (!inputChecks.OneTwoThreeFourFiveSixSeven(input));
 
@@ -63,14 +69,19 @@ namespace Projet_Final_Environement.src
 
             do
             {
+                Console.WriteLine("=================");
                 Console.WriteLine("1-Convertir le poids");
                 Console.WriteLine("2-Convertir la distance");
                 Console.WriteLine("3-Convertir la surface");
                 Console.WriteLine("4-Convertir la température");
                 Console.WriteLine("5-Convertir la vitesse");
                 Console.WriteLine("6-Changer de langue");
+                Console.WriteLine("=================");
                 Console.WriteLine("7-Quitter");
+                Console.WriteLine("=================");
+                Console.Write("Enter your choice:");
                 input = Console.ReadLine();
+                Console.Clear();
 
             } while (!inputChecks.OneTwoThreeFourFiveSixSeven(input));
 
@@ -110,14 +121,18 @@ namespace Projet_Final_Environement.src
 
             do
             {
+                Console.WriteLine("=================");
                 Console.WriteLine("1-Convertir peso");
                 Console.WriteLine("2-Convertir distancia");
                 Console.WriteLine("3-Convertir superficie");
                 Console.WriteLine("4-Convertir temperatura");
                 Console.WriteLine("5-Convertir velocidad");
                 Console.WriteLine("6-Cambiar idioma");
+                Console.WriteLine("=================");
                 Console.WriteLine("7-Salir");
+                Console.WriteLine("=================");
                 input = Console.ReadLine();
+                Console.Clear();
 
             } while (!inputChecks.OneTwoThreeFourFiveSixSeven(input));
 

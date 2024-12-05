@@ -9,28 +9,6 @@ namespace Projet_Final_Environement.src
 {
     internal class ConsoleInteractions
     {
-        public static bool ConvertOrQuit(out bool quit)
-        {
-            string input = "";
-            quit = false;
-            do
-            {
-                Console.WriteLine("1-Convert");
-                Console.WriteLine("2-Quit");
-                input = Console.ReadLine();
-
-            } while (!inputChecks.OneOrTwo(input));
-
-            if (inputChecks.Quit(input))
-            {
-                quit = true;
-                return quit;
-            }
-            else
-            {
-                return quit;
-            }
-        }
         public static bool ChooseLanguage(out bool quit)
         {
             string input = "";
@@ -38,12 +16,18 @@ namespace Projet_Final_Environement.src
 
             do
             {
+                Console.WriteLine("Menu language");
+                Console.WriteLine("=================");
                 Console.WriteLine("1-English");
                 Console.WriteLine("2-Francais");
                 Console.WriteLine("3-Espanol");
+                Console.WriteLine("=================");
                 Console.WriteLine("4-Exit");
+                Console.WriteLine("=================");
+                Console.Write("Enter your choice:");
                 input = Console.ReadLine();
-            }while (!inputChecks.OneTwoThreeFour(input));
+                Console.Clear();
+            } while (!inputChecks.OneTwoThreeFour(input));
 
             switch (input)
             {

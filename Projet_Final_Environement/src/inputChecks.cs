@@ -17,6 +17,7 @@ namespace Projet_Final_Environement.src
             else
             {
                 Console.WriteLine("Error/Erreur");
+                Console.WriteLine("=================");
                 return false;
             }
         }
@@ -44,6 +45,7 @@ namespace Projet_Final_Environement.src
             else
             {
                 Console.WriteLine("Error/Erreur");
+                Console.WriteLine("=================");
                 return false;
             }
         }
@@ -56,6 +58,7 @@ namespace Projet_Final_Environement.src
             else
             {
                 Console.WriteLine("Error/Erreur");
+                Console.WriteLine("=================");
                 return false;
             }
         }
@@ -68,6 +71,7 @@ namespace Projet_Final_Environement.src
             else
             {
                 Console.WriteLine("Error/Erreur");
+                Console.WriteLine("=================");
                 return false;
             }
         }
@@ -80,6 +84,7 @@ namespace Projet_Final_Environement.src
             else
             {
                 Console.WriteLine("Error/Erreur");
+                Console.WriteLine("=================");
                 return false;
             }
         }
