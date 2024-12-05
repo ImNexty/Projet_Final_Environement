@@ -16,7 +16,7 @@ namespace Projet_Final_Environement.src
             }
             else
             {
-                Console.WriteLine($"The input '{input}' is not a valid integer.");
+                Console.WriteLine("Error/Erreur");
                 return false;
             }
         }
@@ -43,7 +43,7 @@ namespace Projet_Final_Environement.src
             }
             else
             {
-                Console.WriteLine("Invalid input");
+                Console.WriteLine("Error/Erreur");
                 return false;
             }
         }
@@ -55,19 +55,31 @@ namespace Projet_Final_Environement.src
             }
             else
             {
-                Console.WriteLine("Invalid input");
+                Console.WriteLine("Error/Erreur");
                 return false;
             }
         }
-        public static bool OneTwoThreeFourFive(string input)
+        public static bool OneTwoThreeFourFiveSix(string input)
         {
-            if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5")
+            if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6")
             {
                 return true;
             }
             else
             {
-                Console.WriteLine("Invalid input");
+                Console.WriteLine("Error/Erreur");
+                return false;
+            }
+        }
+        public static bool OneTwoThreeFourFiveSixSeven(string input)
+        {
+            if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7")
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Error/Erreur");
                 return false;
             }
         }

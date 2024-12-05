@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,44 +31,36 @@ namespace Projet_Final_Environement.src
                 return quit;
             }
         }
-        public static bool ChooseConversion(out bool quit)
+        public static bool ChooseLanguage(out bool quit)
         {
             string input = "";
             quit = false;
 
             do
             {
-                Console.WriteLine("1-Convert weight");
-                Console.WriteLine("2-Convert distance");
-                Console.WriteLine("3-Convert surface");
-                Console.WriteLine("4-Convert Temp");
-                Console.WriteLine("5-Quit");
+                Console.WriteLine("1-English");
+                Console.WriteLine("2-Francais");
+                Console.WriteLine("3-Espanol");
+                Console.WriteLine("4-Exit");
                 input = Console.ReadLine();
-
-            } while (!inputChecks.OneTwoThreeFourFive(input));
+            }while (!inputChecks.OneTwoThreeFour(input));
 
             switch (input)
             {
                 case "1":
-                    Conversions.ConversionWeight(out quit);
+                    Languages.English(out quit);
                     break;
-
                 case "2":
-                    Conversions.ConversionDistance(out quit);
+                    Languages.French(out quit);
                     break;
-
                 case "3":
-                    Conversions.ConversionSurface(out quit);
+                    Languages.Spanish(out quit);
                     break;
-
                 case "4":
-                    Conversions.ConversionTemperature(out quit);
-                    break;
-
-                case "5":
                     quit = true;
                     break;
             }
+
             return quit;
         }
 

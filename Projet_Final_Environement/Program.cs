@@ -8,11 +8,7 @@ class Program
         bool quit = false;
         do
         {
-            ConsoleInteractions.ConvertOrQuit(out quit);
-            if (!quit)
-            {
-                ConsoleInteractions.ChooseConversion(out quit);
-            }
+            ConsoleInteractions.ChooseLanguage(out quit);
         }
         while (!quit);
     }
