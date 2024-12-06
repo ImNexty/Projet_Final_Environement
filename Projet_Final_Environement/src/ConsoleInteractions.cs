@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Projet_Final_Environement.src
 {
+    /// <summary>
+    /// Cette section est le menu de base et demande à l'utilisateur de choisir une option jusqu'à ce que l'option choisi soit valide. 
+    /// L'utilisateur sera redirigé vers l'option choisi.
+    /// </summary>
     internal class ConsoleInteractions
     {
         public static bool ChooseLanguage(out bool quit)

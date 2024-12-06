@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace Projet_Final_Environement.src
 {
+    /// <summary>
+    /// Cette section vérifie le choix de langue fait par l'utilisateur et lui donne un menu dans la langue choisi 
+    /// pour choisir le type de conversion
+    /// </summary>
     internal class Languages
     {
         public static void English(out bool quit)

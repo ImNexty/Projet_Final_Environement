@@ -9,6 +9,10 @@ namespace Projet_Final_Environement.src
 {
     internal class EnglishConversions
     {
+        /// <summary>
+        /// Cette section comprend toutes les conversions (calculs) et les menus de choix des unités pour quand l'utilisateur choisit
+        /// l'option de langue anglais. C'est dans ces boucles que les résultats seront calculés et affichés selon les options choisies
+        /// </summary>
         public static bool ConversionWeight(out bool quit)
         {
             string input = "";

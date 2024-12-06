@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Projet_Final_Environement.src
 {
+    /// <summary>
+    /// Cette section comprend toutes les conversions (calculs) et les menus de choix des unités pour quand l'utilisateur choisit
+    /// l'option de langue français. C'est dans ces boucles que les résultats seront calculés et affichés selon les options choisies
+    /// </summary>
     internal class FrenchConversions
     {
         public static bool ConversionWeight(out bool quit)
